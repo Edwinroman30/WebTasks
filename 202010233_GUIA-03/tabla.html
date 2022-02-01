@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia 3</title>
+
+    <style>
+        table, th, td {
+          border:1px solid #333;
+          padding: 0px;
+          margin: 0px;
+          text-align: center;
+        }
+        
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            size: 0.9em;
+            color: #E6F3FF;
+        }
+
+        .product-name {
+            background-color: aqua;
+            background-image: url('../Img/cartoon-anime.gif');
+            background-repeat: no-repeat;
+            background-position: 0;
+        }
+        
+        tr:nth-child(even){
+        
+            background-color: orange;
+        }
+        
+        tr > td:hover{
+            background-color: #FFFF66;
+            cursor: pointer;
+            
+        }
+        
+        </style>
+        
+</head>
+<body>
+        
+<center>
+
+    <h2>Guia 03 - HTML table</h2>
+
+    <table style="width:70%" cellspacing="0" cellpadding="5">
+    
+        <tr>
+            <th>Nombre Producto</th>
+            <th>Venta Semana 1</th>
+            <th>Venta Semana 2</th>
+            <th>Venta Semana 3</th>
+            <th>Venta Semana 4</th>
+        </tr>
+        
+        <tr>
+            <th class="product-name">Pasta</th>
+            <td>125.45</td>
+            <td>159.78</td>
+            <td>130.56</td>
+            <td>116.56</td>
+        </tr>
+        
+        <tr>
+            <th class="product-name">Detergentes</th>
+            <td>67.89</td>
+            <td>78.56</td>
+            <td>90.56</td>
+            <td>69.34</td>
+        </tr>
+        
+        
+        <tr>
+            <th class="product-name">Sopas</th>
+            <td>45.67</td>
+            <td>34.45</td>
+            <td>45.81</td>
+            <td>67.80</td>
+        </tr>
+    
+        <tr>
+            <th class="product-name">Especiales</th>
+            <td>17.56</td>
+            <td>18.67</td>
+            <td>15.81</td>
+            <td>13.23</td>
+        </tr>
+    
+    
+    </table>
+
+    <img src="../Img/cartoon-anime.gif" alt="Carton bailando - Edwin" width="300px">
+    <p>Edwin Roman - 202010233</p>    
+
+
+</center>
+
+</body>
+</html>
