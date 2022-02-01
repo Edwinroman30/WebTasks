@@ -5,46 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enviar un correo</title>
+
+    <style>
+        .form-container{
+            width: 40vw;
+            display: block;
+            padding: 20px;
+            background-color: rgb(217, 219, 228);
+        }
+
+        .form-container input{
+            margin: 10px;
+        }
+
+        .form-group{
+            display: flex;
+            flex-direction: column;
+        }
+
+    </style>
+
 </head>
 <body>
     
-    <h1>Enviar un correo:</h1>
-
+    
     <form action="mailto:202010233@itla.edu.do" method="post" name="">
         
         <div class="form-container">
             
+            <h1>Enviar un correo:</h1>
+            
             <label for="nombre">Escriba su nombre:</label>
             <input type="text" name="name" id="">
+            <br>
 
             <label for="password">Escriba su contrasena:</label>
             <input type="password" name="password" id="">
+            <br>
 
             <label for="foto">Cargue una foto suya:</label>
             <input type="file" name="foto" id="">
+            <br>
 
-            <label for="califica">Este manual te parece:</label>
+            <b>
+                <label for="califica">Este manual te parece:</label>
+            </b>
+            <hr>
+                
 
             <div class="form-group">
-                <input type="radio" name="Muybueno" id="" value="Muy bueno">
-                 Muy bueno
 
-                 <input type="radio" name="bueno" id="" value="bueno">
-                 Bueno
+                <div class="block">
+                    <input type="radio" name="Muybueno" id="" value="Muy bueno">
+                    <label for="">Muy Bueno</label>
+                </div>
 
-                 <input type="radio" name="Malo" id="" value="Malo">
-                 Malo
+                <div class="block">
+                    <input type="radio" name="bueno" id="" value="bueno">
+                    <label for="">Bueno</label>
+                </div>
 
-                 <input type="radio" name="Muymalo" id="" value="Muy malo">
-                 Muy malo
+                <div class="block">
+                    <input type="radio" name="Malo" id="" value="Malo">
+                    <label for="">Malo</label>
+                </div>
+
+                <div class="block">
+                    <input type="radio" name="Muymalo" id="" value="Muy malo">
+                    <label for="">Muy malo</label>
+                </div>
+
+            </div>
+            
+            <br>
+            
+            <input type="checkbox" name="isthreupdates" id=""> Avisarme sobre actulizaciones.
+            <hr>
+
+            <div class="block-buttoms">
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
             </div>
 
         </div>
 
-        <input type="checkbox" name="isthreupdates" id=""> Avisarme sobre actulizaciones.
-
-        <button type="submit">Enviar</button>
-        <button type="reset">Borrar</button>
     </form>
 
 </body>
