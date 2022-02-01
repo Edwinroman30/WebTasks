@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar un correo</title>
+</head>
+<body>
+    
+    <h1>Enviar un correo:</h1>
+
+    <form action="mailto:202010233@itla.edu.do" method="post" name="">
+        
+        <div class="form-container">
+            
+            <label for="nombre">Escriba su nombre:</label>
+            <input type="text" name="name" id="">
+
+            <label for="password">Escriba su contrasena:</label>
+            <input type="password" name="password" id="">
+
+            <label for="foto">Cargue una foto suya:</label>
+            <input type="file" name="foto" id="">
+
+            <label for="califica">Este manual te parece:</label>
+
+            <div class="form-group">
+                <input type="radio" name="Muybueno" id="" value="Muy bueno">
+                 Muy bueno
+
+                 <input type="radio" name="bueno" id="" value="bueno">
+                 Bueno
+
+                 <input type="radio" name="Malo" id="" value="Malo">
+                 Malo
+
+                 <input type="radio" name="Muymalo" id="" value="Muy malo">
+                 Muy malo
+            </div>
+
+        </div>
+
+        <input type="checkbox" name="isthreupdates" id=""> Avisarme sobre actulizaciones.
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
+
+</body>
+</html>
