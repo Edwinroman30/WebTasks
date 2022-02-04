@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro de visitas</title>
+</head>
+<body>
+    
+
+    <form action="mailto:202010233@itla.edu.do" method="post" name="miformulario">
+        
+        <h1>Libro de visitas:</h1>
+        
+        <div class="form-container">
+            
+            <div class="personal-data-layer">
+                
+                <h4>Datos personales:</h4>
+                <label for="">Nombre</label>
+                <input type="text" name="nombre" id="">
+
+                <label for="">Apellidos</label>
+                <input type="text" name="apellidos" id="">
+
+            </div>
+
+            <div class="logging-data-layer">
+                <label for="">Pseúdonimo</label>
+                <input type="text" name="pseudonimo" id="" maxlenght="16">
+                
+                <label for="">Contraseña</label>
+                <input type="password" name="contrasena" id="" maxlenght="12">
+            </div>
+
+            <div class="other-data-layer">
+            
+                <div class="age-layer">
+                    <p>Edad</p>
+                    <input type="radio" name="0-10" id=""> <label>0 - 10</label>
+                    <input type="radio" name="11-20" id=""> <label>11 - 20</label>
+                    <input type="radio" name="21-30" id=""> <label>21 - 30</label>
+                    <input type="radio" name="31-40" id=""> <label>31 - 40</label>
+                    <input type="radio" name="mas" id=""> <label>41 o más</label>
+                </div>
+
+                <div class="location-layer">
+                    <p>¿Dónde usted vive?</p>
+                    <input type="radio" name="Santiago" id=""> <label>Santiago</label>
+                    <input type="radio" name="Std" id=""> <label>Santo Domingo</label>
+                    <input type="radio" name="Romana" id=""> <label>La Romana</label>
+                    <input type="radio" name="San Cristobal" id=""> <label>San Cristóbal</label>
+                    <input type="radio" name="otros" id=""> <label for="">Otros:</label> <input type="text" name="" id="">
+                </div>
+
+                <div class="freetime-layer">
+                    <p>Aficciones:</p>
+                    <input type="checkbox" name="musica" id=""> <label for="">Música</label>
+                    <input type="checkbox" name="deportes" id=""> <label for="">Deportes</label>
+                    <input type="checkbox" name="pinturas" id=""> <label for="">Pinturas</label>
+                    <input type="checkbox" name="lectura" id=""> <label for="">Lectura</label>
+                    <input type="checkbox" name="otros2" id=""> <label for="">Otros:</label> <input type="text" name="" id="">
+                </div>
+            
+            </div>
+
+            <div class="buttons-layer">
+                <button type="submit">Enviar</button>
+                <button type="reset">Restaurar</button>
+            </div>
+
+        </div>
+
+    </form>
+
+</body>
+</html>
